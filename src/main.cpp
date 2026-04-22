@@ -11,7 +11,7 @@ const int SWITCH02 = 4;         //
 byte FADE_SCHRITT = 5;          // Bestimmt die Geschwindigkeit des „fadens“
 
 /* Variablen deklarieren */
-byte helligkeit = 0;            // Das Wort „Helligkeit“ steht nun für den Wert, der bei der PWM ausgegeben wird
+byte helligkeit = 0;                         // Das Wort „Helligkeit“ steht nun für den Wert, der bei der PWM ausgegeben wird
 
 void Dimmen() { 
   analogWrite(LEDRED_PIN, helligkeit);       // LED (Pin9) die PWM Ausgabe aktiviert
