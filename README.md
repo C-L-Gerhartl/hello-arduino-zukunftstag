@@ -80,5 +80,3 @@ Pin  4  ----┐ └---- Taster 2 ---- GND (INPUT_PULLUP)
   - Gedrückt ⇒ LOW, Nicht gedrückt ⇒ HIGH
 
 ⚠️ Wichtig: Alle **GND-Anschlüsse** müssen miteinander verbunden sein.
-
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/963eb890-b22f-4271-b95e-67f31569b1b9" />
