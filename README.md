@@ -5,7 +5,8 @@ Dieses Projekt wurde für den **Zukunftstag** entwickelt und zeigt, wie man mit 
 ## 🧰 Hardware
 - Arduino (z. B. Arduino Uno oder Nano)
 - 3 LEDs (Rot, Grün, Blau)
-- 2 Taster
+- 1 EIN/AUS Schalter
+- 1 EIN/AUS/EIN Schalter
 - Widerstände
 - Steckbrett & Jumper-Kabel
 
@@ -18,26 +19,26 @@ Dieses Projekt wurde für den **Zukunftstag** entwickelt und zeigt, wie man mit 
 | Taster 1 | Pin 2 |
 | Taster 2 | Pin 4 |
 
-Die Taster werden mit **INPUT_PULLUP** betrieben.  
+Die Schalter werden mit **INPUT_PULLUP** betrieben.  
 👉 Das bedeutet:  
 - **nicht gedrückt = HIGH**  
 - **gedrückt = LOW**
 
 ## 🎛️ Funktionen
-Je nach Stellung der beiden Taster passiert etwas anderes:
+Je nach Stellung der beiden Schalter passiert etwas anderes:
 
 ### ✅ Dauerlicht (Standard)
-- **Beide Taster gleich** (beide gedrückt oder beide nicht gedrückt)
+- **Beide Schalter gleich** (beide gedrückt oder beide nicht gedrückt)
 - Alle LEDs leuchten dauerhaft
 
 ### 🔁 Blinken
-- **Taster 1 nicht gedrückt**
-- **Taster 2 gedrückt**
+- **Schalter 1 EIN**
+- **Schalter 2 AUS**
 - Alle LEDs blinken schnell
 
 ### 🌈 Dimmen (Fade-Effekt)
-- **Taster 1 gedrückt**
-- **Taster 2 nicht gedrückt**
+- **Schalter 1 EIN**
+- **Schalter 2 AUS**
 - Alle LEDs werden langsam heller und dunkler (PWM)
 
 ## 🧠 Was lernt man dabei?
@@ -45,7 +46,7 @@ Je nach Stellung der beiden Taster passiert etwas anderes:
 - Unterschied zwischen `digitalWrite` und `analogWrite`
 - Nutzung von **PWM** zum Dimmen von LEDs
 - Arbeiten mit **Funktionen**
-- Einlesen von **Tastern**
+- Einlesen von **Schalter/Taster**
 
 ## 🖥️ Serieller Monitor
 Über den seriellen Monitor (115200 Baud) wird angezeigt, welcher Modus gerade aktiv ist:
@@ -64,6 +65,7 @@ Der folgende Schaltplan zeigt vereinfacht, wie Arduino, LEDs und Taster verbunde
 Pin 11  ------------------->  LED ROT  ---[220Ω]--- GND
 Pin 10  ------------------->  LED GRÜN ---[220Ω]--- GND
 Pin  9  ------------------->  LED BLAU ---[220Ω]--- GND
+
 Pin  2  ----┐ └---- Taster 1 ---- GND (INPUT_PULLUP)
 Pin  4  ----┐ └---- Taster 2 ---- GND (INPUT_PULLUP)
 
@@ -72,7 +74,7 @@ Pin  4  ----┐ └---- Taster 2 ---- GND (INPUT_PULLUP)
   - Jede LED ist über einen **Vorwiderstand (ca. 220 Ω)** mit Masse (GND) verbunden
   - Die langen Beine der LEDs kommen an die Arduino-Pins (9, 10, 11)
 
-- **Taster**
+- **Schalter/Taster**
   - Die Taster sind zwischen **Pin und GND** angeschlossen
   - Durch `INPUT_PULLUP` ist **kein zusätzlicher Widerstand nötig**
   - Gedrückt ⇒ LOW, Nicht gedrückt ⇒ HIGH
