@@ -13,7 +13,7 @@ Dieses Projekt wurde für den **Zukunftstag** entwickelt und zeigt, wie man mit 
 ## 🔌 Anschlüsse
 | Bauteil | Arduino Pin |
 |-------|-------------|
-| Rote LED | Pin 11 |
+| Rote LED | Pin 12 |
 | Blaue LED | Pin 9 |
 | Grüne LED | Pin 10 |
 | Taster 1 | Pin 2 |
