@@ -3,7 +3,7 @@
 /* Konstanten */
 const int LEDBLUE_PIN = 9;      // Das Wort „LEDBLUE_PIN“ steht jetzt für den Wert 9 (blaue LEDs sind an PIN 9 angschlossen)
 const int LEDGREEN_PIN = 10;    // Das Wort „LEDGREEn_PIN“ steht jetzt für den Wert 10 (grüne LEDs sind an PIN 10 angeschlossen)
-const int LEDRED_PIN = 11;      // Das Wort „LEDRED_PIN“ steht jetzt für den Wert 11 (rote LEDs sind an PIN11 angschlossen)
+const int LEDRED_PIN = 12;      // Das Wort „LEDRED_PIN“ steht jetzt für den Wert 11 (rote LEDs sind an PIN11 angschlossen)
 const int SWITCH01 = 2;         // 
 const int SWITCH02 = 4;         // 
 
